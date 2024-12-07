@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Ana Paula</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div id="logo">
+            <h1>Portfólio <span class="purple">Ana Paula</span></h1>
+         </div>
+
+         <div id="menu">
+            <a href="index.html">Sobre mim</a>
+            <a href="formacao.html">Formação</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contato.html" class="active">Contato</a>
+        </div>
+
+    </div>
+    
+    <!--início do formulário de contato-->
+    <div id="texto1">
+
+        <div id="titulo">
+            <h2>Entre em contato</h2>
+        </div>
+
+        <form id="contato-formulario">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" value="" required><br>
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email" name="email" value="" required><br>
+            <label for="msg">Mensagem:</label><br>
+            <textarea id="msg" name="msg" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Enviar">
+
+        </form>
+
+        <!--EXIBIR UMA MENSAGEM USANDO JAVASCRIPT AO ENVIAR-->
+        <script>
+            const formulario = document.getElementById('contato-formulario');
+
+            formulario.addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Mensagem enviada com sucesso. Obrigada pelo contato!');
+            });
+        </script>
+
+    </div>
+    <!--fechamento do formulário de contato-->
+
+    <div id="rodape">
+        Todos os direitos reservados - ANA PAULA GOMES BARBOSA
+    </div>
+
+</body>
+
+</html>

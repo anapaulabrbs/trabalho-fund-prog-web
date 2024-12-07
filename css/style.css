@@ -1,0 +1,121 @@
+/*
+****** LIMPAR FORMATAÇÕES ******
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+****** FORMATAÇÕES GENÉRICAS ******
+*/
+body{
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F0DEF4;
+}
+
+h1{
+    color: #2A0333;
+    font-size: 32px;
+}
+
+h2{
+    color: #9359A0;
+}
+
+h3{
+    color: #000000;
+    background: #C092CA;
+    padding: 5px;
+}
+
+/*
+****** HEADER ******
+*/
+#header{
+    background-color: #F0DEF4;
+    padding: 15px;
+    text-align: center;
+}
+
+#logo, #menu{
+    padding: 15px;
+}
+
+#header a:link, #header a:visited{
+    color: #9359A0;
+    padding: 10px 30px;
+}
+
+#header a:hover{
+    color: #40114B;
+    background: #FFFFFF;
+    text-decoration: none;
+}
+
+#header a.active {
+    color: #FFFFFF;
+    background: #9359A0;
+    text-decoration: none;
+}
+
+.purple{
+    color: #9359A0;
+}
+
+/*
+****** CONTEÚDO ******
+*/
+#texto1{
+    width: 620px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#titulo{
+    width: 620px;
+    margin: 0 auto;
+}
+
+#contato-formulario{
+    width: 620px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contato-formulario input[type="text"],
+#contato-formulario textarea {
+    width: 100%; /* Para que os campos tenham a mesma largura do formulário*/
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*
+****** FORMATAÇÃO LINKS ******
+*/
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: #682E75;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*
+****** RODAPÉ ******
+*/
+#rodape{
+    text-align: center;
+    padding: 20px;
+    background: #FFFFFF;
+    color: #C092CA;
+    position: fixed; /* Para manter o rodapé ao final da página*/
+    bottom: 0;
+    width: 100%;
+}
